@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0" />
+		<title>Home</title>
+		<link
+			rel="stylesheet"
+			href="css.css" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+			rel="stylesheet" />
+	</head>
+	<body>
+		<div class="container">
+			<header>
+				<h1>Welcome Back</h1>
+				<div
+					class="date"
+					id="date"></div>
+			</header>
+
+			<main>
+				<div class="search-container">
+					<div class="search">
+						<input
+							type="text"
+							id="searchInput"
+							placeholder="Search with Google or enter address"
+							class="search-input"
+							autofocus />
+						<button
+							class="search-btn"
+							id="searchBtn">
+							<i class="fas fa-search"></i>
+						</button>
+					</div>
+				</div>
+
+				<div class="bookmarks-container">
+					<div
+						class="bookmarks-grid"
+						id="bookmarksGrid"></div>
+				</div>
+			</main>
+
+			<!-- Add Bookmark Modal -->
+			<div
+				class="modal"
+				id="bookmarkModal">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h3>Add Bookmark</h3>
+						<button
+							class="btn-icon close-btn"
+							id="closeModal">
+							<i class="fas fa-times"></i>
+						</button>
+					</div>
+					<div class="modal-body">
+						<div class="form-group">
+							<label for="bookmarkName">Name</label>
+							<input
+								type="text"
+								id="bookmarkName"
+								placeholder="e.g. Google"
+								required />
+						</div>
+						<div class="form-group">
+							<label for="bookmarkUrl">URL</label>
+							<input
+								type="url"
+								id="bookmarkUrl"
+								placeholder="https://example.com"
+								required />
+						</div>
+						<div class="form-actions">
+							<button
+								type="button"
+								class="btn btn-secondary"
+								id="cancelBookmark">
+								Cancel
+							</button>
+							<button
+								type="submit"
+								class="btn btn-primary"
+								id="saveBookmark">
+								Save
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<footer>
+			<p>&copy; 2025 IronBill25.</p>
+		</footer>
+
+		<script src="js.js"></script>
+	</body>
+</html>
